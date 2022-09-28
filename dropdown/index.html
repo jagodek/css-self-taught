@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .dropdown-button{
+            background-color: limegreen;
+            font-size: 24px;
+            text-align: center;
+            padding-top: 1em;
+            width: 10em;
+            height: 2em;
+            color: white;
+        }
+        .dropdown-content{
+            background-color: black;
+            display: none;
+            position: absolute;
+            background-color: rgb(108, 129, 108);
+            font-size: 24px;
+            text-align: center;
+            min-width: 10em;
+            box-shadow: 0px 8px 10px 0px black;
+            z-index: 1;
+            
+        }
+        .dropdown:hover .dropdown-content{
+           display: block; 
+        }
+        .dropdown-element{
+            padding: 1em;
+        }
+        .dropdown-element:hover{
+            background-color: rgb(89, 107, 89);
+        }
+        .dropdown:hover .dropdown-button{ 
+            background-color:rgb(45, 189, 45) ;
+        }
+        p{
+            text-align: center;
+        }
+        .test-block{
+            display: block;
+            background-color: rgb(250, 211, 114);
+            width: 10em;
+            padding: 10px;
+            color: black;
+            text-decoration-line: none;
+        }
+       
+        
+        .test-block:hover{
+            background-color: rgb(204, 164, 63);
+        }
+    </style>
+</head>
+<body>
+    some text here 
+    <div class="dropdown">
+        <div class="dropdown-button">menu</div>
+        <div class="dropdown-content">
+            <div class="dropdown-element">option1</div>
+            <div class="dropdown-element">option2</div>
+            <div class="dropdown-element">option3</div>
+            <div class="dropdown-element">option4</div>
+        </div>
+    </div>
+    <p>another text idk pls work</p>
+    <a href="#" class="test-block">test block</a>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+    .box{
+        height: 100px;
+        width: 200px;
+        background-color: bisque;
+        margin: 30px;
+    }
+
+
+    .abs2{
+        position: absolute;
+    }
+
+    .rel{
+        position: relative;
+        left: 500px;
+        top: 100px;
+    }
+    .fix{
+        position: fixed;
+        left: 250px;
+    }
+    .abs{
+        position: absolute;
+    }
+    .sti{
+        position: sticky;
+        top: 0px;
+        /* przy sticky musi być określone top */
+    }
+    .block{
+        height: 1000px;
+    }
+</style>
+</head>
+<body>
+    <div class="abs2 box">
+        where relative would be
+    </div>
+    <div class="rel box">
+        relative
+    </div>
+    <div class="fix box">
+        fixed
+    </div>
+    <div class="abs box">
+        absolute
+    </div>
+    <div class="sti box">
+        sticky
+    </div>
+    <div class="block"></div>
+</body>
+</html>

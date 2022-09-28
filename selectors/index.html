@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+
+    <style>
+        
+        li.red ~ li{
+            background-color: rgba(95, 80, 80, 0.164);
+        }
+
+        .inp:required{
+            background-color: red;
+        }
+        .check:checked, .check:disabled{
+            margin: 40px;
+        }
+        li:nth-child(2n){
+            background-color: blue;
+        }
+        </style>
+</head>
+<body>
+    <input required type="text" class="inp">
+    <input disabled type="checkbox" class="check">
+    <ul>
+    <li class="first">item 1</li>
+    <li>item 2</li>
+    <li class="red">item 3</li>
+    <li class="g">item 4</li>
+    <li>item 5</li>
+    </ul>
+</body>
+</html>

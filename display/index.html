@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        b{
+            display: inline-block;
+            padding: 10px;
+            width: 90%;
+            min-height: 90%;
+            background-color: #482abc;
+            overflow: auto;
+        }
+
+        .a{
+            background-color: red;
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .b{
+            background-color: blue;
+            height: 40px;
+            width: 90px;
+        }
+        .c{
+            position: absolute;
+            /*sprawia że text pod spodem nie przeskakuje */
+            background-color: rgb(23, 23, 49);
+            height: 40px;
+            width: 90px;
+            display: none;
+        }
+
+        .a:hover .c{
+            display: block;
+        }
+        .a:hover .b{
+            background-color: red;
+        }
+
+
+        li{
+            display: inline;
+        }
+        .spa{
+            display: block;
+        }
+        .hid{
+            width: 40px;
+            height: 69px;
+            background-color: red;
+        }
+        .hid:hover{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>tudduudrruur <b>helloo theheherreee!1!!!!!!/!?1!!?</b></p>
+    </div>
+    <div class="a">
+        <div class="b">
+            
+        </div>
+        <div class="c">
+
+        </div>
+    </div>
+    <p>litwo ojczyzno moja == Mickiewicz był Litwinem</p>
+    <h1>Display - część zasadnicza <span>test span</span> <div> test div </div> <span>test span</span></h1>
+    
+    <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>e</li>
+    </ul>
+    <p><span class="spa">span</span> <span class="spa">another span</span></p>
+
+    <div class="hid">
+
+    </div>
+</body>
+</html>

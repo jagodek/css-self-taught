@@ -1,0 +1,26 @@
+
+
+
+li.red ~ li{  tylko elementy po wystąpieniu klasy red
+    background-color: red;
+}
+
+<ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li class="red">item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+</ul>
+
+
+li.red + li  jeden element po wystąpieniu klasy red
+
+
+li.red + li.green  jeden element po wystąpieniu klasy red jeśli jest klasy green
+
+    <li class="red">item 3</li>
+    <li class="green">item 4</li>   <--- zaznaczy ten element
+
+[attribute_name^=beginng]   <tag attribute_name="beginning...">
+[attribute_name$=end] < attribute_name="...end">

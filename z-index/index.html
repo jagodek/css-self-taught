@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        img{
+            position: absolute;
+            z-index: 2;
+        }
+        .p1{
+            z-index: 3;
+            position: relative;
+            color: green;
+        }
+        .p2{
+            z-index: 1;
+            position: relative;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://picsum.photos/id/404/200/300" alt="">
+    <p class="p1">some text in front</p>
+    <p class="p2">some text behind</p>
+    <p class="conc">musi być position bo nie zadziała</p>
+</body>
+</html>
