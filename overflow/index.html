@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        .container{
+            font-size: 24px;
+            height: 300px;
+            width: 500px;
+            background-color: #aaa;
+            padding: 10px;
+            float:left;
+            margin-right: 20px;
+        }
+
+        .visible{
+            overflow: visible;
+        }
+
+        .hidden{
+            
+            overflow: hidden;    
+        }
+
+        .scroll{
+            overflow: scroll;
+        }
+
+        .auto{
+            clear: both;
+            position: relative;
+            top: 400px;
+            width: 100%;
+            overflow: auto;
+        }
+
+        .scroll-x{
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+            overflow-y: scroll; /* Add vertical scrollbar */
+        }
+        .large{
+            height: 1000px;
+            width: 500px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="large">
+    <div class="container visible">
+        <h1>overflow visible default</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique aperiam sapiente labore provident temporibus quasi sed veritatis, at corrupti doloribus cupiditate quia soluta nemo, ipsa consequatur, ratione numquam error alias.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam, debitis eveniet placeat voluptatum quis maiores eius dolore voluptate illo maxime fugiat error ipsum consequuntur veritatis, quae ipsam quas tenetur.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur laboriosam iste similique ut qui, dolores minima quia tenetur, reiciendis ipsa, maiores quae dicta quasi nesciunt. Odio hic suscipit ipsa eius!
+        </p>
+    </div>
+    </div>
+    <div class="large">
+    <div class="container hidden">
+        <h1>overflow hidden</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique aperiam sapiente labore provident temporibus quasi sed veritatis, at corrupti doloribus cupiditate quia soluta nemo, ipsa consequatur, ratione numquam error alias.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam, debitis eveniet placeat voluptatum quis maiores eius dolore voluptate illo maxime fugiat error ipsum consequuntur veritatis, quae ipsam quas tenetur.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur laboriosam iste similique ut qui, dolores minima quia tenetur, reiciendis ipsa, maiores quae dicta quasi nesciunt. Odio hic suscipit ipsa eius!
+        </p>
+    </div></div>
+    <div class="large">
+    <div class="container scroll">
+        <h1>overflow scroll</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique aperiam sapiente labore provident temporibus quasi sed veritatis, at corrupti doloribus cupiditate quia soluta nemo, ipsa consequatur, ratione numquam error alias.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam, debitis eveniet placeat voluptatum quis maiores eius dolore voluptate illo maxime fugiat error ipsum consequuntur veritatis, quae ipsam quas tenetur.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur laboriosam iste similique ut qui, dolores minima quia tenetur, reiciendis ipsa, maiores quae dicta quasi nesciunt. Odio hic suscipit ipsa eius!
+        </p>
+    </div></div>
+
+    <div class="large">
+    <div class="container auto">
+        <h1>overflow auto</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique aperiam sapiente labore provident temporibus quasi sed veritatis, at corrupti doloribus cupiditate quia soluta nemo, ipsa consequatur, ratione numquam error alias.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam, debitis eveniet placeat voluptatum quis maiores eius dolore voluptate illo maxime fugiat error ipsum consequuntur veritatis, quae ipsam quas tenetur.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur laboriosam iste similique ut qui, dolores minima quia tenetur, reiciendis ipsa, maiores quae dicta quasi nesciunt. Odio hic suscipit ipsa eius!
+        </p>
+    </div></div>
+
+    <div class="large">
+    <div class="container scroll-x">
+        <h1>overflow auto</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique aperiam sapiente labore provident temporibus quasi sed veritatis, at corrupti doloribus cupiditate quia soluta nemo, ipsa consequatur, ratione numquam error alias.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam, debitis eveniet placeat voluptatum quis maiores eius dolore voluptate illo maxime fugiat error ipsum consequuntur veritatis, quae ipsam quas tenetur.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur laboriosam iste similique ut qui, dolores minima quia tenetur, reiciendis ipsa, maiores quae dicta quasi nesciunt. Odio hic suscipit ipsa eius!
+        </p>
+    </div></div>
+    
+</body>
+</html>
